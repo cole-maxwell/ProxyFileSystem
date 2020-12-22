@@ -31,16 +31,11 @@
 	<target name="compile" depends="init">
 		<javac srcdir="${src}" destdir="${bin}" includeAntRuntime="false">
             <classpath refid="classpath"/>	
-			<include name="edu/umb/cs680/hw08/StartupFileSystem.java"/>
-			<include name="edu/umb/cs680/hw08/FileSystem.java"/>
-			<include name="edu/umb/cs680/hw08/FSElement.java"/>
-			<include name="edu/umb/cs680/hw08/Directory.java"/>
-			<include name="edu/umb/cs680/hw08/File.java"/>
-			<include name="edu/umb/cs680/hw08/Link.java"/>
+			<include name="edu/umb/cs680/hw08/*.java"/>
 		</javac>
 		<javac srcdir="${test.src}" destdir="${test.bin}" includeAntRuntime="false">
             <classpath refid="classpath"/>	
-			<include name="edu/umb/cs680/hw08/FileSystemTest.java"/>
+			<include name="edu/umb/cs680/hw08/*Test.java"/>
 		</javac>
 	</target>
 
@@ -52,7 +47,7 @@
 			<classpath refid="classpath" />
 			<testclasses outputdir="${test.reports}">
 				<fileset dir="${test.bin}">	
-					<include name="edu/umb/cs680/hw08/FileSystemTest.class"/>
+					<include name="edu/umb/cs680/hw08/*Test.class"/>
 				</fileset>
 				<listener type="legacy-plain" sendSysOut="true"/>
 			</testclasses>

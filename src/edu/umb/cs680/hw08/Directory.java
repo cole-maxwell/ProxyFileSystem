@@ -48,23 +48,18 @@ public class Directory extends FSElement
 	public LinkedList<FSElement> getChildren() {
 		return children;
 	}
-
 	public LinkedList<Directory> getSubDirectories() {
 		return subDirectories;
 	}
-	
 	public LinkedList<File> getFiles() {
 		return files;
 	}
 	public LinkedList<Link> getLinks() {
 		return links;
 	}
-
-	// returns the number of files and subdirectories in the directory
 	public int countChildren() {
 		return this.children.size();	
 	}
-
 	public int getTotalSize() {
 		
 		int totalSize = 0;
@@ -75,11 +70,7 @@ public class Directory extends FSElement
 		for (Directory dir: this.getSubDirectories())   {
 			dir.getTotalSize();
 		}
-		return totalSize;
-		
+		return totalSize;	
 	}
-
-
-	
 }
 
