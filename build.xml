@@ -7,7 +7,7 @@
   in a shell. 
 -->
 
-<project name="hw_08" basedir="."  default="clean">
+<project name="ProxyFileSystem" basedir="."  default="clean">
 
 	<property environment="env"/>
     <property name="src" location="src" />
