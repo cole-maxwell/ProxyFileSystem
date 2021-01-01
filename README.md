@@ -7,7 +7,7 @@ File, or to another Link in the FileSystem.<br />
 
 ---- Compile & Run ----<br />
 
-**_cd_** to **_/FileSystem_** and type **_ant -f build.xml_**.<br />
+Clone the repo, **_cd_** to **_/FileSystem_** and type **_ant -f build.xml_**.<br />
 
 ---- Prerequisite Steps & Environment Setup ----<br />
 
