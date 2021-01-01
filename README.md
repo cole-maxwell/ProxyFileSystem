@@ -1,9 +1,9 @@
 # ProxyFileSystem
 ---- Program Description ----<br />
 
-A FileSystem is implemented as a Singleton class and has Directory, File, and Link classes that<br />
-extend the abstract class FSElement. Symbolic links, or shortcuts, act as proxies of a directory,<br />
-file, or of another link in the FileSystem.<br />
+A FileSystem is implemented as a Singleton class and has an arbitrary number of Directory, File, and Link classes<br />
+that extend the abstract class FSElement. A Link is a symbolic link, or shortcuts, that act as a proxy to a directory,<br />
+file, or to another link in the FileSystem.<br />
 
 ---- Compile & Run ----<br />
 
